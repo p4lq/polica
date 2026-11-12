@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 92" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#233d35">
+  <rect x="5" y="46" width="30" height="24" fill="#52816b"/>
+  <text x="20" y="42">12</text>
+  <text x="20" y="87">Пн</text>
+  <rect x="50" y="38" width="30" height="32" fill="#52816b"/>
+  <text x="65" y="34">16</text>
+  <text x="65" y="87">Вт</text>
+  <rect x="95" y="42" width="30" height="28" fill="#52816b"/>
+  <text x="110" y="38">14</text>
+  <text x="110" y="87">Ср</text>
+  <rect x="140" y="34" width="30" height="36" fill="#52816b"/>
+  <text x="155" y="30">18</text>
+  <text x="155" y="87">Чт</text>
+  <rect x="185" y="38" width="30" height="32" fill="#52816b"/>
+  <text x="200" y="34">16</text>
+  <text x="200" y="87">Пт</text>
+  <rect x="230" y="22" width="30" height="48" fill="#52816b"/>
+  <text x="245" y="18">24</text>
+  <text x="245" y="87">Сб</text>
+  <rect x="275" y="30" width="30" height="40" fill="#52816b"/>
+  <text x="290" y="26">20</text>
+  <text x="290" y="87">Нд</text>
+</svg>

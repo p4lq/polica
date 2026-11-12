@@ -1,0 +1,75 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 24px;
+  background: #f5f3ed;
+  color: #233d35;
+  font: 16px/1.5 Arial, sans-serif;
+}
+
+/* Основні частини сторінки */
+.layout {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header header"
+    "menu   main";
+  gap: 24px;
+}
+header {
+  grid-area: header;
+  background: #224c40;
+  color: white;
+  padding: 16px 24px;
+}
+header strong { font: bold 28px Georgia, serif; }
+nav { grid-area: menu; }
+nav a {
+  display: block;
+  color: #224c40;
+  padding: 8px;
+}
+main { grid-area: main; }
+h1, h2 { margin: 0; font-family: Georgia, serif; }
+h1 { margin-bottom: 16px; }
+h2 { font-size: 21px; }
+
+/* Розміри карток */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: minmax(140px, auto);
+  gap: 14px;
+}
+section {
+  background: white;
+  border: 1px solid #d6d9cc;
+  border-radius: 8px;
+  padding: 20px;
+}
+.wide { grid-column: span 2; }
+.tall { grid-row: span 2; }
+.number { margin: 8px 0; font-size: 32px; font-weight: bold; }
+p { margin: 6px 0; }
+img { display: block; width: 320px; max-width: 100%; height: auto; }
+ul { list-style: none; margin: 12px 0 0; padding: 0; }
+li { border-top: 1px solid #d6d9cc; padding: 14px 0; }
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "menu" "main";
+  }
+  nav a { display: inline-block; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tall { grid-row: auto; }
+}
+@media (max-width: 600px) {
+  body { padding: 12px; }
+  .layout { gap: 12px; }
+  .cards { grid-template-columns: 1fr; }
+  .wide { grid-column: auto; }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Книгарня «Полиця» — панель керування</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="layout">
+  <header><strong>Полиця</strong> / Панель книгарні</header>
+  <nav aria-label="Меню панелі">
+    <a href="#overview">Огляд</a>
+    <a href="#orders">Замовлення</a>
+    <a href="#stock">Запаси</a>
+  </nav>
+  <main id="overview">
+    <h1>Огляд книгарні</h1>
+    <div class="cards">
+      <section class="wide">
+        <h2>Продажі за тиждень</h2>
+        <p class="number">120 книг</p>
+        <img src="sales.svg" alt="Продано за днями: Пн 12, Вт 16, Ср 14, Чт 18, Пт 16, Сб 24, Нд 20 книг.">
+      </section>
+      <section id="orders" class="tall">
+        <h2>Останні замовлення</h2>
+        <ul>
+          <li><b>№ 1043</b><br>Готується до відправлення</li>
+          <li><b>№ 1042</b><br>Передано в доставку</li>
+          <li><b>№ 1041</b><br>Отримано покупцем</li>
+        </ul>
+      </section>
+      <section><h2>Нові покупці</h2><p class="number">18</p><p>За цей тиждень</p></section>
+      <section><h2>Повідомлення</h2><p class="number">3</p><p>Очікують відповіді</p></section>
+      <section id="stock" class="wide"><h2>Запаси книг</h2><p class="number">248</p><p>Примірників на полицях</p></section>
+      <section><h2>Книга тижня</h2><p><b>Лісова пісня</b><br>Леся Українка</p></section>
+    </div>
+  </main>
+</body>
+</html>
